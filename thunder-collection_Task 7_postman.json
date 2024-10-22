@@ -1,0 +1,606 @@
+{
+    "info": {
+        "_postman_id": "dc0c4f95-74c0-4ea3-9335-83a72bb693b9",
+        "name": "Task 7",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "courses",
+            "item": [
+                {
+                    "name": "Add Course",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/add",
+                            "path": [
+                                "api",
+                                "courses",
+                                "add"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\":\"new course\",\n  \"description\":\"this is a khaled course\",\n  \"time\":\"10d\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTExNTdmMGFlZGE1MGJkNGM0NTBiYyIsImlhdCI6MTcyOTE3Mjg2MywiZXhwIjoxNzI5NjA0ODYzfQ.-QGZ0llztF6-SHf7Qi5zPpsNX0kYjttK7wefInA2iok",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Courses",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/all",
+                            "path": [
+                                "api",
+                                "courses",
+                                "all"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGZlODc3MDFiZTU4MDRkY2RiMjM5NCIsImlhdCI6MTcyOTE3ODA5MSwiZXhwIjoxNzI5NjEwMDkxfQ.Vkct9JROS_unezQh5c4HXiHtOFgzn6fOQ8P1GgwRbyY",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Course",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/get-one/670f5af9bf889963ede2e2e3",
+                            "path": [
+                                "api",
+                                "courses",
+                                "get-one",
+                                "670f5af9bf889963ede2e2e3"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGE4ODJmYWNmZDIzMGQ3ZjA2N2FiNCIsImlhdCI6MTcyODc0MzQ3MSwiZXhwIjoxNzI5MTc1NDcxfQ.LsbeB8U5olQZxJY0Ps15DpRWwy4tYdkLqVDRtn76gZk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Course",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/670fe89f01be5804dcdb2398",
+                            "path": [
+                                "api",
+                                "courses",
+                                "670fe89f01be5804dcdb2398"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\":\"php\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGY1YWI3YmQzMmY5NTI3YmEzNjNkNSIsImlhdCI6MTcyOTEyOTc3NiwiZXhwIjoxNzI5NTYxNzc2fQ.OMDI0pl9yXONVQc3Fudm4fQnyNG7sT2mkDRGreSiU7k",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Course",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/670fb3166199376da126a811",
+                            "path": [
+                                "api",
+                                "courses",
+                                "670fb3166199376da126a811"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGY1YWI3YmQzMmY5NTI3YmEzNjNkNSIsImlhdCI6MTcyOTA4MjEwMywiZXhwIjoxNzI5NTE0MTAzfQ.eB2vRKKrDrpwJHNYGDZegitdal5wdBu4rYKJMCOEzjA",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "videos",
+            "item": [
+                {
+                    "name": "Add Video",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/add/671265b1f2268016cf0d10d0",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "add",
+                                "671265b1f2268016cf0d10d0"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\":\"video new course\",\n  \"description\":\"this is video 4\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTExNTdmMGFlZGE1MGJkNGM0NTBiYyIsImlhdCI6MTcyOTE3Mjg2MywiZXhwIjoxNzI5NjA0ODYzfQ.-QGZ0llztF6-SHf7Qi5zPpsNX0kYjttK7wefInA2iok",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Videos",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/all",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "all"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGZlODc3MDFiZTU4MDRkY2RiMjM5NCIsImlhdCI6MTcyOTE3ODA5MSwiZXhwIjoxNzI5NjEwMDkxfQ.Vkct9JROS_unezQh5c4HXiHtOFgzn6fOQ8P1GgwRbyY",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Video",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/get-one/670fe98001be5804dcdb23a1",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "get-one",
+                                "670fe98001be5804dcdb23a1"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGY1YWI3YmQzMmY5NTI3YmEzNjNkNSIsImlhdCI6MTcyOTA1OTUxMSwiZXhwIjoxNzI5NDkxNTExfQ.vX1a7Am5SoVDitNSD-mwYjN89oAE38ZVAPFNlUsrJKo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Video",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/67106e75bcc1517bb7a8d799",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "67106e75bcc1517bb7a8d799"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\":\"new video\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGZlODc3MDFiZTU4MDRkY2RiMjM5NCIsImlhdCI6MTcyOTEzMDIxMSwiZXhwIjoxNzI5NTYyMjExfQ.WhUtert-BH0yifhycR7AqP3pJEiCSgtK1z6ONa2IOIk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Video",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/670fb3366199376da126a828",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "670fb3366199376da126a828"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGY1YWI3YmQzMmY5NTI3YmEzNjNkNSIsImlhdCI6MTcyOTA1OTUxMSwiZXhwIjoxNzI5NDkxNTExfQ.vX1a7Am5SoVDitNSD-mwYjN89oAE38ZVAPFNlUsrJKo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "comments",
+            "item": [
+                {
+                    "name": "Add Comment",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/comments/add/670fe98001be5804dcdb23a1",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "comments",
+                                "add",
+                                "670fe98001be5804dcdb23a1"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"description\":\"this is third comment\",\n  \"course_id\": \"670fe89f01be5804dcdb2398\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGY1YWI3YmQzMmY5NTI3YmEzNjNkNSIsImlhdCI6MTcyOTA1OTUxMSwiZXhwIjoxNzI5NDkxNTExfQ.vX1a7Am5SoVDitNSD-mwYjN89oAE38ZVAPFNlUsrJKo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Comments",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/comments/all",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "comments",
+                                "all"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGE4ODJmYWNmZDIzMGQ3ZjA2N2FiNCIsImlhdCI6MTcyODc0MzQ3MSwiZXhwIjoxNzI5MTc1NDcxfQ.LsbeB8U5olQZxJY0Ps15DpRWwy4tYdkLqVDRtn76gZk",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Comment",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/comments/get-one/670f4b491295618580dd04bb",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "comments",
+                                "get-one",
+                                "670f4b491295618580dd04bb"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGY1YWI3YmQzMmY5NTI3YmEzNjNkNSIsImlhdCI6MTcyOTA1OTUxMSwiZXhwIjoxNzI5NDkxNTExfQ.vX1a7Am5SoVDitNSD-mwYjN89oAE38ZVAPFNlUsrJKo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Comment",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/comments/670bd2acf3df81ddab4db4df",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "comments",
+                                "670bd2acf3df81ddab4db4df"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"description\":\"this is first comment\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGY1YWI3YmQzMmY5NTI3YmEzNjNkNSIsImlhdCI6MTcyOTA1OTUxMSwiZXhwIjoxNzI5NDkxNTExfQ.vX1a7Am5SoVDitNSD-mwYjN89oAE38ZVAPFNlUsrJKo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Comment",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "localhost:5000/api/courses/videos/comments/670f5c12bf889963ede2e305",
+                            "path": [
+                                "api",
+                                "courses",
+                                "videos",
+                                "comments",
+                                "670f5c12bf889963ede2e305"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGY1YWI3YmQzMmY5NTI3YmEzNjNkNSIsImlhdCI6MTcyOTA1OTUxMSwiZXhwIjoxNzI5NDkxNTExfQ.vX1a7Am5SoVDitNSD-mwYjN89oAE38ZVAPFNlUsrJKo",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "users",
+            "item": [
+                {
+                    "name": "Register",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "localhost:5000/api/users/register",
+                            "path": [
+                                "api",
+                                "users",
+                                "register"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"khaled\",\n  \"email\":\"khaled@gmail.com\",\n  \"password\":\"123\",\n  \"role\":\"MANAGER\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Login",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "localhost:5000/api/users/login",
+                            "path": [
+                                "api",
+                                "users",
+                                "login"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"email\":\"ali@gmail.com\",\n  \"password\":\"123\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Users",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "localhost:5000/api/users/all",
+                            "path": [
+                                "api",
+                                "users",
+                                "all"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGE4ODJmYWNmZDIzMGQ3ZjA2N2FiNCIsImlhdCI6MTcyODgwMDc1MSwiZXhwIjoxNzI5MjMyNzUxfQ.o_Vec-jXbHeayhvOlH018luclcjTuSd_y6e61YiXMY4",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
